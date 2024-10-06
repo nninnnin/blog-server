@@ -1,3 +1,3 @@
-This is the server for my blog.
+# 블로그 서버
 
-crafted with nestjs
+- yarn을 사용중
