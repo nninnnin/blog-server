@@ -1,5 +1,5 @@
-import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
+import { Controller, Get, Post } from '@nestjs/common';
+import { AppService } from '@/app.service';
 
 @Controller()
 export class AppController {
@@ -16,5 +16,10 @@ export class CatsController {
   @Get('all')
   findAll() {
     return 'All Cats are founded';
+  }
+
+  @Post()
+  create() {
+    return 'A cat is created';
   }
 }
